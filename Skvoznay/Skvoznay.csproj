@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RootNamespace>ConsoleApp12</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="AngouriMath" Version="1.4.0-preview.3" />
+      <PackageReference Include="DotNetZip" Version="1.16.0" />
+      <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+      <PackageReference Include="SharpCompress" Version="0.32.2" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Builder\Builders" />
+      <Folder Include="Builder\DataProcessingService" />
+    </ItemGroup>
+
+</Project>
