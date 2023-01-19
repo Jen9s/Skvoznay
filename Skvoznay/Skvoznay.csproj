@@ -15,9 +15,4 @@
       <PackageReference Include="SharpCompress" Version="0.32.2" />
     </ItemGroup>
 
-    <ItemGroup>
-      <Folder Include="Builder\Builders" />
-      <Folder Include="Builder\DataProcessingService" />
-    </ItemGroup>
-
 </Project>

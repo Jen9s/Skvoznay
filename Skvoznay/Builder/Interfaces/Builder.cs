@@ -2,6 +2,7 @@ namespace ConsoleApp12.Builder.Interfaces;
 
 public interface Builder
 {
-    void EncryptData();
+    Task WriteData(string data);
+    Task EncryptData();
     
 }
