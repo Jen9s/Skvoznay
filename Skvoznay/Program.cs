@@ -11,13 +11,15 @@ var simple2 = new FileDataSource{FileName = @"C:\Users\user\RiderProjects\Consol
 var simple3 = new FileDataSource{FileName = @"C:\Users\user\RiderProjects\ConsoleApplication4\ConsoleApplication4\input.xml",InTypeFile = "xml",OutTypeFile = "xml"};
 var simple13 = new FileDataSource{FileName = @"C:\\TEMP\\arhivxml.zip",InTypeArx = "zip",InTypeFile = "xml"};
 var simple12 = new FileDataSource{FileName = @"C:\\TEMP\\arhivjson.zip",InTypeArx = "zip",InTypeFile = "json"};
+var simplejson = new FileDataSource{FileName = @"C:\TEMP\input.json",InTypeFile = "json",OutTypeFile = "json"};
+
 
 ReadMainProcess readMainProcess = new ReadMainProcess();
-Console.WriteLine(readMainProcess.Read(simple2));
-ProcessingData processingData = new ProcessingData(readMainProcess.Read(simple2));
+Console.WriteLine(readMainProcess.Read(simplejson));
+ProcessingData processingData = new ProcessingData(readMainProcess.Read(simplejson));
 Console.WriteLine(processingData.Processing());
 WriteMainProcess writeMainProcess = new WriteMainProcess();
-writeMainProcess.Write(simple2,processingData.Processing());
+writeMainProcess.Write(simplejson,processingData.Processing());
 
 
 

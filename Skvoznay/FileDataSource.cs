@@ -18,13 +18,13 @@ public class FileDataSource : DataSource
         if (InTypeFile == "txt")
         {
             StreamReader input = new StreamReader(FileName); // TXT
-            // Console.WriteLine(input.ReadLine());
+            
             return input.ReadLine();
         }
         if (InTypeFile == "json")
         {
             var obj = JsonConvert.DeserializeObject<File>(System.IO.File.ReadAllText(FileName)); // JSON
-            // Console.WriteLine(obj?.Name);
+            
             return obj.Name;
         }
         if (InTypeFile == "xml")
